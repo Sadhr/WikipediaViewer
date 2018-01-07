@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Exo|Lobster+Two');
+body {
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#searchInput {
+    margin-top: 10em;
+}
+
+.well {
+    background-color: rgba(245, 245, 245, 0.4);
+}
+
+.well:hover {
+    box-shadow: 10px 10px 10px #C8E6C9;
+}
+
+.iconStyle:hover {
+    color: #a6b525;
+}
+
+.iconStyle {
+    cursor: pointer;
+    color: #afc2cb;
+    font-size: 2em;
+    display: inline-block;
+    top: 3px;
+    position: relative;
+}
+
+#resultSearch {
+    margin-bottom: -1em;
+}
+
+#closeStyle {
+    cursor: pointer;
+    color: #afc2cb;
+    font-size: 2.5em;
+    margin-top: -0.2em;
+    margin-left: 95%;
+}
+
+#closeStyle:hover {
+    color: #a6b525;
+}
+
+h1 {
+    font-family: Exo, sans-serif;
+}
+
+p {
+    font-size: 1.3em;
+    font-family: Josefin Slab, serif;
+}
+
+#line {
+    margin-top: 0em;
+    border-width: medium;
+}
+
+input[type=search] {
+    width: 40%;
+    height: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=search]:focus {
+    width: calc(100% - 10em);
+}
+
+.topbar {
+    color: #afc2cb;
+    margin-top: 0.4em;
+    margin-bottom: -0.9em;
+    margin-left: 1.5em;
+}
+
+a {
+    color: #89bf5e;
+}
+
+.logo {
+    top: 10%;
+    right: 45%;
+    position: absolute;
+}
+
+#wiki {
+    font-family: TradeGothic;
+    font-size: 3em;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 1px;
+}
+
+#viewer {
+    background-image: -webkit-linear-gradient(bottom, #89bf5e, #97dcd7);
+    color: white;
+    padding-left: 0.09375em;
+    padding-right: 0.09375em;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 2px;
+    border-radius: 11% / 24%;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 7px 5px 5px #C8E6C9;
+}
+
+#footerText {
+    font-family: Lobster Two, cursive;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-device-width: 768px) {
+    .logo {
+        top: 12%;
+        right: 42%;
+        position: absolute;
+    }
+    footer {
+        position: fixed;
+        bottom: 0px;
+        margin-right: auto;
+        margin-left: 6em;
+        text-shadow: 7px 5px 5px #C8E6C9;
+    }
+}
+
+@media (max-device-width: 425px) {
+    .logo {
+        top: 7%;
+        right: 42%;
+        position: absolute;
+    }
+    #footerText {
+        font-size: 2em;
+    }
+    ul {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: @screen-lg-min) {
+    ...
+}
